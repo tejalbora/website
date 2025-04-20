@@ -1,10 +1,11 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "";
+$password = "mysql";
 $dbname = "art_paradise";
+$socket = '/tmp/mysql.sock'; 
 
-$conn = new mysqli($host, $user, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $dbname,3306, $socket);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
