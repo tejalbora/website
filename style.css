@@ -230,6 +230,22 @@ body {
     right: 10px;
 }
 
+.cart-btn {
+    float: right;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #45a049;
+}
+
 #news {
     display: flex;
     justify-content: space-between;
@@ -238,6 +254,90 @@ body {
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
+}
+
+#newsletter-send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041e42;
+    padding: 25px;
+    color: #fff;
+    border-radius: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+#newsletter-send .left {
+    flex: 1;
+    min-width: 100px;
+    padding-right: 30px;
+}
+
+#newsletter-send .left h4 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#newsletter-send .left p {
+    font-size: 12px;
+    color: #cfd8dc;
+}
+
+#newsletter-send .right {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#newsletter-send .right label {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#newsletter-send input[type="text"],
+#newsletter-send select,
+#newsletter-send textarea {
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    width: 80%;
+}
+
+#newsletter-send textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#newsletter-send input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newsletter-send input[type="submit"]:hover {
+    background-color: #e65a4f;
+}
+
+#newsletter-send select {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 #news h4 {
@@ -427,7 +527,8 @@ input[type=email],
 input[type=tel],
 input[type=date],
 input[type=file],
-input,textarea,
+input,
+textarea,
 select {
     width: 30%;
     padding: 12px 20px;
@@ -454,5 +555,143 @@ input[type=reset] {
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.art-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.art-table thead {
+    background-color: #041e42;
+    color: white;
+}
+
+.art-table th,
+.art-table td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.art-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.artwork-thumb {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-form select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.art-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.art-table th,
+.art-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.art-table th {
+    background-color: #041e42;
+    color: white;
+}
+
+.art-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+section.admin-panel {
+    padding: 20px;
+}
+
+h2,
+h3 {
+    color: #041e42;
+    margin-bottom: 10px;
+}
+
+.admin-form,
+.user-table-container {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.create-user-form input,
+.create-user-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+.create-user-form button {
+    padding: 8px 12px;
+    background-color: #041e42;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #041e42;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
 }

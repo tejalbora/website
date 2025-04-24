@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta chatset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Buy Art - Buyer Portal</title>
@@ -21,7 +21,8 @@
                 <li><a href="#product1">Shop</a></li>
                 <li><a href="#news">About</a></li>
                 <li><a href="#news">Contact us</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <!-- Login and Signup buttons -->
+                <li><a href="signin_signup.php" class="login-btn">SignIn/SignUp</a></li>
             </ul>
         </div>
     </section>
@@ -95,7 +96,6 @@
                     <i class="fab fa-pinterest-p"></i>
                     <i class="fab fa-youtube"></i>
                 </div>
-
             </div>
         </div>
 
@@ -115,11 +115,8 @@
         <div class="copywrite">
             <p>Create By Art Paradise @2023 | All Right Reserved.</p>
         </div>
-
     </footer>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
